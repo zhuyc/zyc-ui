@@ -1,10 +1,15 @@
 {
   "name": "zyc-ui",
+  "private": false,
+  "main": "lib/zyc-ui.umd.js",
   "version": "0.1.0",
-  "private": true,
+  "keywords": [
+    "zyc",
+    "zyc-ui"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name zyc-ui --dest lib packages/index.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
